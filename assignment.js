@@ -3,7 +3,7 @@
 // Check if a user input string is a valid email format (eg: example@mail.com). 
 // Output "email is valid" if valid or "invalid email" otherwise. 
 
-let mail=prompt("insert your email").toLowerCase().trim()
+let mail= prompt("insert your email").toLowerCase().trim()
 if (mail.includes("@") && mail.endsWith(".com")|| mail.endsWith(".ng")
 ||mail.endsWith(".net")||mail.endsWith(".org")){
     console.log("Email is valid")
@@ -42,7 +42,21 @@ if(url.startsWith("http://")||url.startsWith("https://")){
     }
     else{
      console.log('Invalid Url')
-    }  
+    } 
+    
+    // Question4 Palindrome 
+    let word=prompt("input a word").toLowerCase()
+let message=""
+for(i=word.length-1; i>=0; i--){
+    message= message+word.charAt(i)
+}
+    if(word===message){
+    console.log("its a Palindrome")
+    }
+    else{
+    console.log("Not a Palindrome")
+        
+    }
 
     // // Question5
     // 5. Username Length Validation: 
